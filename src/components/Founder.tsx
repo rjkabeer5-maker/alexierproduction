@@ -1,13 +1,5 @@
 import founder from "@/assets/founder-ankit.jpeg";
 
-const timeline = [
-  { y: "2015", t: "The Journey Begins", d: "Started in entertainment with a passion for sound and story." },
-  { y: "2016–18", t: "Radio Years", d: "RJ and Sr. Managing Head — mastering voice & audience." },
-  { y: "2019", t: "Netflix & Prime Dubbing", d: "Connected with global OTT through premium dubbing work." },
-  { y: "2020", t: "CEO at Premix Production", d: "Led strategic growth across television, films & web shows." },
-  { y: "2022", t: "Brand Storytelling", d: "Corporate films for Indian and German enterprises." },
-  { y: "Today", t: "Alexier Productions", d: "A full-spectrum content house powering cinematic stories." },
-];
 
 export function Founder() {
   return (
