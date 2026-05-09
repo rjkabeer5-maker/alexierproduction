@@ -26,7 +26,7 @@ export function Founder() {
           <div className="lg:col-span-2 relative">
             <div className="absolute -inset-6 bg-gradient-gold rounded-3xl blur-2xl opacity-30 animate-glow-pulse" />
             <div className="relative rounded-3xl overflow-hidden gold-border shadow-cinematic">
-              <img src={founder} alt="Ankit Jain Kabeer" className="w-full h-full object-cover aspect-[3/4]" />
+              <img src={founder} alt="Ankit Jain Kabeer — Founder of Alexier Productions" className="w-full h-full object-cover object-top aspect-[3/4]" />
               <div className="absolute inset-0 bg-gradient-to-t from-coffee/70 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 text-ivory">
                 <div className="text-xs uppercase tracking-[0.4em] text-gold-soft">Founder • CEO</div>
