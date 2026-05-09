@@ -264,6 +264,18 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+@keyframes rotate-border {
+  to { transform: rotate(360deg); }
+}
+@keyframes logo-shine {
+  0% { transform: translateX(-120%); }
+  60%, 100% { transform: translateX(120%); }
+}
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.5deg); }
+}
+.animate-logo-float { animation: logo-float 5s ease-in-out infinite; }
 
 .animate-intro-zoom { animation: intro-zoom 2.4s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
 .animate-intro-fade-out { animation: intro-fade-out 1s ease-out 3.2s forwards; }
