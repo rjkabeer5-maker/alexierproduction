@@ -1,5 +1,5 @@
 import { useState } from "react";
-import microdrama from "@/assets/svc-microdrama.jpg";
+import microdrama from "@/assets/microdrama-poster.jpeg";
 import fiction from "@/assets/svc-fiction.jpg";
 import branded from "@/assets/svc-branded.jpg";
 import corporate from "@/assets/svc-corporate.jpg";
