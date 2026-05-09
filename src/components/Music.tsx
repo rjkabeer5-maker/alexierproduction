@@ -4,16 +4,16 @@ export function Music() {
   return (
     <section id="music" className="relative py-32 overflow-hidden">
       <img src={music} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-      <div className="absolute inset-0 bg-gradient-to-b from-coffee/80 via-coffee/70 to-coffee/95" />
-      <div className="absolute inset-0 bg-cinematic opacity-50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ivory/85 via-ivory/40 to-ivory/95" />
+      <div className="absolute inset-0 bg-cinematic-light opacity-80" />
 
-      <div className="relative container mx-auto px-6 text-center text-ivory">
-        <div className="inline-block px-5 py-2 rounded-full glass mb-6 text-xs uppercase tracking-[0.5em] text-gold-soft">— Coming Soon —</div>
-        <h2 className="font-display text-5xl md:text-8xl font-bold leading-tight text-shadow-cinema">
-          Launching Soon <br />
+      <div className="relative container mx-auto px-6 text-center text-coffee">
+        <div className="inline-block px-5 py-2 rounded-full glass-light shadow-luxe mb-6 text-xs uppercase tracking-[0.5em] text-gold-deep">— Coming Soon —</div>
+        <h2 className="font-display text-5xl md:text-8xl font-bold leading-tight text-shadow-soft">
+          <span className="text-coffee">Launching Soon</span> <br />
           <span className="text-gradient-gold">Alexier Music</span>
         </h2>
-        <p className="mt-6 max-w-2xl mx-auto text-lg text-ivory/85">
+        <p className="mt-6 max-w-2xl mx-auto text-lg text-coffee/80">
           A new label born from cinema. Original soundtracks, music videos, and emotional anthems.
         </p>
 

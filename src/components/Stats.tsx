@@ -48,17 +48,17 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export function Stats() {
   return (
-    <section className="relative py-24 bg-gradient-dark text-ivory overflow-hidden">
-      <div className="absolute inset-0 bg-cinematic opacity-40" />
+    <section className="relative py-24 bg-gradient-cream text-coffee overflow-hidden">
+      <div className="absolute inset-0 bg-cinematic-light opacity-50" />
       <div className="container mx-auto px-6 relative">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div
               key={s.label}
-              className="relative text-center p-8 rounded-2xl gold-border-dark shadow-cinematic hover:shadow-glow transition group"
+              className="relative text-center p-8 rounded-2xl glass-light gold-border-glow shadow-luxe hover:shadow-glow transition group"
             >
               <Counter value={s.value} suffix={s.suffix} />
-              <div className="mt-3 text-xs md:text-sm uppercase tracking-[0.35em] text-ivory/70">
+              <div className="mt-3 text-xs md:text-sm uppercase tracking-[0.35em] text-coffee/70">
                 {s.label}
               </div>
               <div className="absolute inset-0 rounded-2xl bg-gradient-gold opacity-0 group-hover:opacity-10 transition pointer-events-none" />

@@ -22,7 +22,7 @@ const projects = [
 
 function Showcase({ img, label }: { img: string; label: string }) {
   return (
-    <div id={label === "Showreel 2025" ? "showreel" : undefined} className="relative rounded-3xl overflow-hidden shadow-cinematic gold-border-dark group">
+    <div id={label === "Showreel 2025" ? "showreel" : undefined} className="relative rounded-3xl overflow-hidden shadow-luxe gold-border-glow group">
       <img src={img} alt={label} className="w-full aspect-[21/9] object-cover transition-transform duration-[2s] group-hover:scale-105" loading="lazy" />
       <div className="absolute inset-0 bg-gradient-to-t from-coffee/90 via-coffee/30 to-transparent" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-ivory">
@@ -36,7 +36,8 @@ function Showcase({ img, label }: { img: string; label: string }) {
 
 export function Projects() {
   return (
-    <section id="projects" className="relative py-32 bg-ivory overflow-hidden">
+    <section id="projects" className="relative py-32 bg-gradient-cream overflow-hidden">
+      <div className="absolute inset-0 bg-cinematic-light opacity-40" />
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="text-xs uppercase tracking-[0.5em] text-gold-deep mb-3">— Our Work —</div>

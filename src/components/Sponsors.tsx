@@ -3,10 +3,11 @@ const sponsors = ["NETFLIX", "PRIME", "SONY", "ZEE5", "JIO STUDIOS", "T-SERIES",
 export function Sponsors() {
   const list = [...sponsors, ...sponsors];
   return (
-    <section className="relative py-20 bg-gradient-dark overflow-hidden border-y border-gold/20">
-      <div className="container mx-auto px-6 mb-10 text-center">
-        <div className="text-xs uppercase tracking-[0.5em] text-gold mb-3">— Trusted By —</div>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-ivory">
+    <section className="relative py-20 bg-gradient-champagne overflow-hidden border-y border-gold/30">
+      <div className="absolute inset-0 bg-cinematic-light opacity-40" />
+      <div className="container mx-auto px-6 mb-10 text-center relative">
+        <div className="text-xs uppercase tracking-[0.5em] text-gold-deep mb-3">— Trusted By —</div>
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-coffee">
           Partners & <span className="text-gradient-gold">Collaborators</span>
         </h2>
       </div>
