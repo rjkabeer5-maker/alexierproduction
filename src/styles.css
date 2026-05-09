@@ -69,11 +69,15 @@
   --input: oklch(0.88 0.03 80);
   --ring: var(--gold);
 
-  --gradient-gold: linear-gradient(135deg, oklch(0.88 0.09 88) 0%, oklch(0.78 0.14 82) 35%, oklch(0.62 0.15 70) 70%, oklch(0.48 0.12 55) 100%);
-  --gradient-gold-soft: linear-gradient(135deg, oklch(0.95 0.05 88) 0%, oklch(0.85 0.10 82) 100%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.92 0.07 88) 0%, oklch(0.82 0.13 82) 35%, oklch(0.66 0.16 70) 70%, oklch(0.52 0.13 55) 100%);
+  --gradient-gold-soft: linear-gradient(135deg, oklch(0.97 0.04 88) 0%, oklch(0.88 0.09 82) 100%);
   --gradient-dark: linear-gradient(180deg, oklch(0.18 0.03 50) 0%, oklch(0.10 0.02 50) 100%);
+  --gradient-champagne: linear-gradient(160deg, oklch(0.985 0.012 88) 0%, oklch(0.94 0.04 85) 45%, oklch(0.90 0.07 82) 100%);
+  --gradient-cream: linear-gradient(180deg, oklch(0.985 0.012 85) 0%, oklch(0.95 0.025 82) 100%);
   --gradient-overlay: linear-gradient(180deg, transparent 0%, oklch(0.10 0.02 50 / 0.85) 100%);
-  --gradient-cinematic: radial-gradient(ellipse at center, oklch(0.78 0.14 82 / 0.25) 0%, transparent 70%);
+  --gradient-overlay-light: linear-gradient(180deg, transparent 0%, oklch(0.985 0.012 85 / 0.85) 100%);
+  --gradient-cinematic: radial-gradient(ellipse at center, oklch(0.82 0.13 82 / 0.30) 0%, transparent 70%);
+  --gradient-cinematic-light: radial-gradient(ellipse at center, oklch(0.92 0.10 85 / 0.55) 0%, transparent 70%);
 
   --shadow-gold: 0 20px 60px -15px oklch(0.62 0.15 70 / 0.45);
   --shadow-cinematic: 0 30px 80px -20px oklch(0.10 0.02 50 / 0.55);
