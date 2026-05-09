@@ -1,26 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { IntroOverlay } from "@/components/IntroOverlay";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Services } from "@/components/Services";
+import { About } from "@/components/About";
+import { Projects } from "@/components/Projects";
+import { Studio } from "@/components/Studio";
+import { Founder } from "@/components/Founder";
+import { Reviews } from "@/components/Reviews";
+import { Music } from "@/components/Music";
+import { Sponsors } from "@/components/Sponsors";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Alexier Productions — Cinematic Storytelling Studio" },
+      { name: "description", content: "Premium microdrama, fiction, AI content, dubbing & full-spectrum cinematic production. Crafting stories that connect & engage." },
+      { property: "og:title", content: "Alexier Productions — Cinematic Storytelling Studio" },
+      { property: "og:description", content: "Premium microdrama, fiction, AI content, dubbing & full-spectrum cinematic production." },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative bg-ivory text-coffee overflow-x-hidden">
+      <IntroOverlay />
+      <Navbar />
+      <Hero />
+      <Services />
+      <About />
+      <Projects />
+      <Studio />
+      <Founder />
+      <Reviews />
+      <Music />
+      <Sponsors />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
