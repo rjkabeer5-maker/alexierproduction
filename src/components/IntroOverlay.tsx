@@ -31,13 +31,15 @@ export function IntroOverlay() {
         />
       ))}
 
-      {/* logo - transparent, no box */}
-      <div className="relative animate-intro-zoom logo-shine">
-        <img
-          src={logo}
-          alt="Alexier Productions"
-          className="logo-transparent h-[46vmin] w-[46vmin] max-h-[520px] max-w-[520px] object-contain"
-        />
+      {/* logo - warm halo, transparent, metallic shine */}
+      <div className="relative animate-intro-zoom animate-logo-float">
+        <span className="logo-halo logo-shine">
+          <img
+            src={logo}
+            alt="Alexier Productions"
+            className="logo-transparent h-[42vmin] w-[42vmin] max-h-[480px] max-w-[480px] object-contain"
+          />
+        </span>
       </div>
 
       {/* huge cinematic title */}
