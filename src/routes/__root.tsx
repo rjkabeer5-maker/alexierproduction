@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Alexier Productions | Cinematic Storytelling & Premium Produ" },
+      { name: "description", content: "Alexier Productions is a premium cinematic content and production studio specializing in microdrama, fiction web series, dubbing, AI storytelling, branded conte" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Alexier Productions | Cinematic Storytelling & Premium Produ" },
+      { property: "og:description", content: "Alexier Productions is a premium cinematic content and production studio specializing in microdrama, fiction web series, dubbing, AI storytelling, branded conte" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Alexier Productions | Cinematic Storytelling & Premium Produ" },
+      { name: "twitter:description", content: "Alexier Productions is a premium cinematic content and production studio specializing in microdrama, fiction web series, dubbing, AI storytelling, branded conte" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cb6e3b9-eb8d-4e06-8008-335399b7af2a/id-preview-ca2fa4de--15121750-8f97-4be2-9edf-f09cee4b67bb.lovable.app-1778314124354.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5cb6e3b9-eb8d-4e06-8008-335399b7af2a/id-preview-ca2fa4de--15121750-8f97-4be2-9edf-f09cee4b67bb.lovable.app-1778314124354.png" },
     ],
     links: [
       {
