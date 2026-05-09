@@ -22,15 +22,21 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2 bg-coffee/85 backdrop-blur-xl border-b border-gold/20" : "py-4 bg-transparent"
+        scrolled ? "py-2 bg-ivory/85 backdrop-blur-xl border-b border-gold/30 shadow-cinematic" : "py-4 bg-transparent"
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between px-6">
         <a href="#top" className="flex items-center gap-3 group">
-          <img src={logo} alt="Alexier" className="h-12 w-12 rounded-full object-contain ring-2 ring-gold/60 group-hover:ring-gold transition" />
+          <span className="logo-shine inline-block animate-logo-float">
+            <img
+              src={logo}
+              alt="Alexier"
+              className="logo-transparent h-12 w-12 object-contain"
+            />
+          </span>
           <div className="leading-none">
             <div className="text-gradient-gold font-display text-xl font-bold tracking-wide">Alexier</div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-gold-soft/80">Productions</div>
+            <div className={`text-[10px] uppercase tracking-[0.3em] ${scrolled ? "text-coffee/70" : "text-ivory/90"}`}>Productions</div>
           </div>
         </a>
         <ul className="hidden lg:flex items-center gap-8">
@@ -38,7 +44,7 @@ export function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm uppercase tracking-widest text-ivory/85 hover:text-gradient-gold transition relative group"
+                className={`text-sm uppercase tracking-widest hover:text-gradient-gold transition relative group ${scrolled ? "text-coffee/85" : "text-ivory"}`}
               >
                 {l.label}
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-gold group-hover:w-full transition-all duration-500" />
@@ -54,18 +60,18 @@ export function Navbar() {
         </a>
         <button
           onClick={() => setOpen((s) => !s)}
-          className="lg:hidden text-gold text-3xl"
+          className={`lg:hidden text-3xl ${scrolled ? "text-coffee" : "text-gold"}`}
           aria-label="Menu"
         >
           {open ? "✕" : "☰"}
         </button>
       </nav>
       {open && (
-        <div className="lg:hidden bg-coffee/95 backdrop-blur-xl border-t border-gold/20">
+        <div className="lg:hidden bg-ivory/95 backdrop-blur-xl border-t border-gold/30 shadow-cinematic">
           <ul className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {links.map((l) => (
               <li key={l.href}>
-                <a onClick={() => setOpen(false)} href={l.href} className="block text-ivory/90 uppercase tracking-widest text-sm py-2">
+                <a onClick={() => setOpen(false)} href={l.href} className="block text-coffee uppercase tracking-widest text-sm py-2">
                   {l.label}
                 </a>
               </li>
