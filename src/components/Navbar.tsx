@@ -27,11 +27,11 @@ export function Navbar() {
     >
       <nav className="container mx-auto flex items-center justify-between px-6">
         <a href="#top" className="flex items-center gap-3 group">
-          <span className="logo-shine inline-block animate-logo-float">
+          <span className="logo-halo logo-shine inline-flex animate-logo-float h-14 w-14">
             <img
               src={logo}
               alt="Alexier"
-              className="logo-transparent h-12 w-12 object-contain"
+              className="logo-transparent h-full w-full object-contain"
             />
           </span>
           <div className="leading-none">
