@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/alexier-logo.jpeg";
+import logo from "@/assets/alexier-logo.png";
 
 export function IntroOverlay() {
   const [hidden, setHidden] = useState(false);
