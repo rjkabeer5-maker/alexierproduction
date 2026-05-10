@@ -1,14 +1,14 @@
 import { useState } from "react";
 import microdrama from "@/assets/microdrama-poster.jpeg";
 import fiction from "@/assets/svc-fiction.jpg";
-import branded from "@/assets/svc-branded.jpg";
+import branded from "@/assets/bts-commercial.jpeg";
 import corporate from "@/assets/svc-corporate.jpg";
-import tvc from "@/assets/svc-tvc.jpg";
+import tvc from "@/assets/bts-commercial.jpeg";
 import podcast from "@/assets/svc-podcast.jpg";
 import dubbing from "@/assets/svc-dubbing.jpg";
 import ai from "@/assets/svc-ai.jpg";
 import vfx from "@/assets/svc-vfx.jpg";
-import production from "@/assets/svc-production.jpg";
+import production from "@/assets/bts-videoproduction.jpeg";
 import training from "@/assets/svc-training.jpg";
 
 type Service = {
