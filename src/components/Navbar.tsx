@@ -27,13 +27,11 @@ export function Navbar() {
     >
       <nav className="container mx-auto flex items-center justify-between px-6">
         <a href="#top" className="flex items-center gap-3 group">
-          <span className="logo-halo logo-shine inline-flex animate-logo-float h-14 w-14">
-            <img
-              src={logo}
-              alt="Alexier"
-              className="logo-transparent h-full w-full object-contain"
-            />
-          </span>
+          <img
+            src={logo}
+            alt="Alexier"
+            className="h-14 w-14 object-contain"
+          />
           <div className="leading-none">
             <div className="text-gradient-gold font-display text-xl font-bold tracking-wide">Alexier</div>
             <div className={`text-[10px] uppercase tracking-[0.3em] ${scrolled ? "text-coffee/70" : "text-ivory/90"}`}>Productions</div>
