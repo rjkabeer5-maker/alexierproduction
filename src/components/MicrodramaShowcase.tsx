@@ -34,13 +34,26 @@ export function MicrodramaShowcase() {
           {/* Poster */}
           <div className="lg:col-span-2 relative group">
             <div className="absolute -inset-6 bg-gradient-gold rounded-3xl blur-2xl opacity-30 animate-glow-pulse" />
-            <div className="relative rounded-3xl overflow-hidden gold-border-glow shadow-luxe">
-              <img
-                src={poster}
-                alt="Alexier Microdrama — Multiple Stories. Endless Emotions."
-                className="w-full h-auto object-cover transition-transform duration-[2s] group-hover:scale-[1.03]"
-                loading="lazy"
+            <div className="relative rounded-[2.5rem] overflow-hidden gold-border-glow shadow-luxe bg-coffee aspect-[9/16] mx-auto max-w-sm">
+              <video
+                src={microVideo}
+                poster={poster}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-[2s] group-hover:scale-[1.03]"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-ivory">
+                <span className="text-[10px] uppercase tracking-[0.4em] text-gold-soft">▶ Now Streaming</span>
+                <span className="px-3 py-1 rounded-full bg-gold/20 backdrop-blur text-[10px] uppercase tracking-widest text-gold">Vertical</span>
+              </div>
+              <div className="absolute bottom-6 left-6 right-6 text-ivory">
+                <div className="text-[10px] uppercase tracking-[0.5em] text-gold-soft">— Alexier Microdrama —</div>
+                <div className="font-display text-2xl font-bold mt-1 text-shadow-cinema">Multiple Stories. Endless Emotions.</div>
+              </div>
             </div>
           </div>
 
