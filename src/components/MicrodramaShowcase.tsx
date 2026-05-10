@@ -1,4 +1,5 @@
 import poster from "@/assets/microdrama-poster.jpeg";
+import microVideo from "@/assets/micro.mp4";
 
 const titles = [
   { name: "Billionaire's Unexpected Love", tags: "Love • Betrayal • Destiny", eps: "100+" },
