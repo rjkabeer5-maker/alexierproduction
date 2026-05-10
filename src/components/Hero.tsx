@@ -1,13 +1,20 @@
 import hero from "@/assets/hero-studio.jpg";
+import alexierVideo from "@/assets/alexier.mp4";
 
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-center justify-center overflow-hidden cinematic-overlay film-grain">
-      <img
-        src={hero}
-        alt="Alexier Productions cinematic studio"
+      <video
+        src={alexierVideo}
+        poster={hero}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
         className="absolute inset-0 h-full w-full object-cover animate-kenburns"
       />
+      <div className="absolute inset-0 backdrop-blur-[1px]" />
       <div className="absolute inset-0 bg-gradient-to-b from-ivory/40 via-ivory/20 to-ivory/85" />
       <div className="absolute inset-0 bg-cinematic-light opacity-80" />
 

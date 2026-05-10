@@ -1,5 +1,6 @@
 import showreel1 from "@/assets/showreel-1.jpg";
 import showreel2 from "@/assets/showreel-2.jpg";
+import filmVideo from "@/assets/film.mp4";
 import microdrama from "@/assets/svc-microdrama.jpg";
 import fiction from "@/assets/svc-fiction.jpg";
 import ai from "@/assets/svc-ai.jpg";
@@ -20,9 +21,31 @@ const projects = [
   { title: "Neon Anthem", category: "Music Videos", img: vfx },
 ];
 
+function VideoShowcase({ src, poster, label, id }: { src: string; poster: string; label: string; id?: string }) {
+  return (
+    <div id={id} className="relative rounded-3xl overflow-hidden shadow-luxe gold-border-glow group">
+      <video
+        src={src}
+        poster={poster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="w-full aspect-[21/9] object-cover transition-transform duration-[2s] group-hover:scale-105"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-coffee/85 via-coffee/20 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-ivory">
+        <div className="text-xs uppercase tracking-[0.5em] text-gold-soft">— Featured Reel —</div>
+        <h3 className="font-display text-4xl md:text-6xl font-bold mt-2 text-shadow-cinema">{label}</h3>
+      </div>
+    </div>
+  );
+}
+
 function Showcase({ img, label }: { img: string; label: string }) {
   return (
-    <div id={label === "Showreel 2025" ? "showreel" : undefined} className="relative rounded-3xl overflow-hidden shadow-luxe gold-border-glow group">
+    <div className="relative rounded-3xl overflow-hidden shadow-luxe gold-border-glow group">
       <img src={img} alt={label} className="w-full aspect-[21/9] object-cover transition-transform duration-[2s] group-hover:scale-105" loading="lazy" />
       <div className="absolute inset-0 bg-gradient-to-t from-coffee/90 via-coffee/30 to-transparent" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-ivory">
@@ -46,7 +69,7 @@ export function Projects() {
           </h2>
         </div>
 
-        <Showcase img={showreel1} label="Showreel 2025" />
+        <VideoShowcase id="showreel" src={filmVideo} poster={showreel1} label="Production House Showreel" />
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {projects.map((p, i) => (
