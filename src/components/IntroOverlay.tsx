@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/alexier-logo.png";
+import logo from "@/assets/alexier-logo.jpeg";
 
 export function IntroOverlay() {
   const [hidden, setHidden] = useState(false);
@@ -33,11 +33,13 @@ export function IntroOverlay() {
 
       {/* logo - warm halo, transparent, metallic shine */}
       <div className="relative animate-intro-zoom animate-logo-float">
-        <img
-          src={logo}
-          alt="Alexier Productions"
-          className="h-[42vmin] w-[42vmin] max-h-[480px] max-w-[480px] object-contain"
-        />
+        <span className="logo-halo logo-shine">
+          <img
+            src={logo}
+            alt="Alexier Productions"
+            className="logo-transparent h-[42vmin] w-[42vmin] max-h-[480px] max-w-[480px] object-contain"
+          />
+        </span>
       </div>
 
       {/* huge cinematic title */}

@@ -205,6 +205,7 @@
   }
   /* Logo: transparent (multiply removes white background of jpeg), warm halo, metallic shine */
   .logo-transparent {
+    mix-blend-mode: multiply;
     filter:
       drop-shadow(0 0 14px oklch(0.92 0.10 85 / 0.85))
       drop-shadow(0 6px 22px oklch(0.66 0.16 70 / 0.55))
