@@ -1,4 +1,4 @@
-import logo from "@/assets/alexier-logo.jpeg";
+import logo from "@/assets/alexier-logo.png";
 
 export function Footer() {
   return (
