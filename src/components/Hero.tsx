@@ -33,10 +33,6 @@ export function Hero() {
           <span className="text-xs uppercase tracking-[0.4em] text-gold-deep">India's Premium OTT Partner</span>
         </div>
 
-        <div className="inline-flex items-center gap-3 mb-8 px-5 py-2 rounded-full glass-light animate-fade-up shadow-luxe">
-          <span className="h-2 w-2 rounded-full bg-gold animate-glow-pulse" />
-          <span className="text-xs uppercase tracking-[0.4em] text-gold-deep">India's Premium OTT Partner</span>
-        </div>
 
         <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
           <span className="block text-coffee">India's Premium</span>
