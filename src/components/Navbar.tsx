@@ -27,7 +27,7 @@ export function Navbar() {
     >
       <nav className="container mx-auto flex items-center justify-between px-6">
         <a href="#top" className="flex items-center gap-3 group">
-          <span className="logo-halo logo-shine inline-flex animate-logo-float h-14 w-14">
+          <span className="logo-halo logo-shine inline-flex animate-logo-float h-20 w-20">
             <img
               src={logo}
               alt="Alexier"
@@ -35,8 +35,8 @@ export function Navbar() {
             />
           </span>
           <div className="leading-none">
-            <div className="text-gradient-gold font-display text-xl font-bold tracking-wide">Alexier</div>
-            <div className={`text-[10px] uppercase tracking-[0.3em] ${scrolled ? "text-coffee/70" : "text-ivory/90"}`}>Productions</div>
+            <div className="text-gradient-gold font-display text-2xl font-bold tracking-wide">Alexier</div>
+            <div className={`text-[10px] uppercase tracking-[0.3em] mt-1 ${scrolled ? "text-coffee/70" : "text-ivory/90"}`}>India's Premium OTT Partner</div>
           </div>
         </a>
         <ul className="hidden lg:flex items-center gap-8">

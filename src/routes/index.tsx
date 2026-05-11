@@ -6,25 +6,32 @@ import { WhyChoose } from "@/components/WhyChoose";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Projects } from "@/components/Projects";
-import { Workflow } from "@/components/Workflow";
-import { Studio } from "@/components/Studio";
-import { MicrodramaShowcase } from "@/components/MicrodramaShowcase";
-import { BehindTheScenes } from "@/components/BehindTheScenes";
-import { Founder } from "@/components/Founder";
 import { Stats } from "@/components/Stats";
+import { ViralProjects } from "@/components/ViralProjects";
+import { Workflow } from "@/components/Workflow";
+import { MicrodramaShowcase } from "@/components/MicrodramaShowcase";
+import { OriginalFiction } from "@/components/OriginalFiction";
+import { CastingStory } from "@/components/CastingStory";
+import { Studio } from "@/components/Studio";
+import { BehindTheScenes } from "@/components/BehindTheScenes";
+import { OutOfCountry } from "@/components/OutOfCountry";
+import { Founder } from "@/components/Founder";
+import { Awards } from "@/components/Awards";
 import { Reviews } from "@/components/Reviews";
 import { Music } from "@/components/Music";
 import { Sponsors } from "@/components/Sponsors";
+import { Invitation } from "@/components/Invitation";
+import { Careers } from "@/components/Careers";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alexier Productions — Cinematic Storytelling Studio" },
-      { name: "description", content: "Premium microdrama, fiction, AI content, dubbing & full-spectrum cinematic production. Crafting stories that connect & engage." },
-      { property: "og:title", content: "Alexier Productions — Cinematic Storytelling Studio" },
-      { property: "og:description", content: "Premium microdrama, fiction, AI content, dubbing & full-spectrum cinematic production." },
+      { title: "Alexier Productions — India's Premium OTT Partner" },
+      { name: "description", content: "Cinema-level emotion. Digital-first storytelling. Premium microdrama, OTT fiction, dubbing & localization across 8+ languages with offices in India and Canada." },
+      { property: "og:title", content: "Alexier Productions — India's Premium OTT Partner" },
+      { property: "og:description", content: "From script to screen — fully managed. Premium OTT production, microdrama and localization." },
       { property: "og:type", content: "website" },
     ],
     links: [
@@ -45,19 +52,26 @@ function Index() {
       <IntroOverlay />
       <Navbar />
       <Hero />
-      <WhyChoose />
-      <Services />
-      <About />
       <Projects />
       <Stats />
-      <Workflow />
+      <WhyChoose />
+      <Services />
+      <ViralProjects />
+      <OriginalFiction />
       <MicrodramaShowcase />
+      <CastingStory />
+      <About />
+      <Workflow />
       <Studio />
       <BehindTheScenes />
+      <OutOfCountry />
       <Founder />
+      <Awards />
+      <Sponsors />
       <Reviews />
       <Music />
-      <Sponsors />
+      <Invitation />
+      <Careers />
       <Contact />
       <Footer />
     </main>

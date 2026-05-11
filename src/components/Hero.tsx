@@ -30,17 +30,20 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="inline-flex items-center gap-3 mb-8 px-5 py-2 rounded-full glass-light animate-fade-up shadow-luxe">
           <span className="h-2 w-2 rounded-full bg-gold animate-glow-pulse" />
-          <span className="text-xs uppercase tracking-[0.4em] text-gold-deep">A World-Class Production House</span>
+          <span className="text-xs uppercase tracking-[0.4em] text-gold-deep">India's Premium OTT Partner</span>
         </div>
 
+
         <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <span className="block text-coffee">India's Next Generation</span>
-          <span className="block text-gradient-gold">Microdrama & Localization</span>
-          <span className="block text-coffee">Studio</span>
+          <span className="block text-coffee">India's Premium</span>
+          <span className="block text-gradient-gold">OTT Partner</span>
         </h1>
 
         <p className="mt-8 max-w-3xl mx-auto text-lg sm:text-2xl text-coffee/80 font-light tracking-wide animate-fade-up" style={{ animationDelay: "0.4s" }}>
           Cinema-Level Emotion. <span className="text-gold-deep font-medium">Digital-First Storytelling.</span>
+        </p>
+        <p className="mt-3 max-w-2xl mx-auto text-base sm:text-lg text-coffee/65 italic animate-fade-up" style={{ animationDelay: "0.5s" }}>
+          From Script To Screen — Fully Managed.
         </p>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.6s" }}>
