@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "@/assets/alexier-logo.jpeg";
+import { Particles } from "./Particles";
 
 export function IntroOverlay() {
   const [hidden, setHidden] = useState(false);
@@ -17,19 +18,7 @@ export function IntroOverlay() {
       <div className="absolute right-1/4 bottom-1/4 h-[30rem] w-[30rem] rounded-full bg-cinematic-light blur-3xl animate-lens-flare" style={{ animationDelay: "1s" }} />
 
       {/* gold sparks */}
-      {Array.from({ length: 36 }).map((_, i) => (
-        <span
-          key={i}
-          className="particle"
-          style={{
-            left: `${Math.random() * 100}%`,
-            bottom: `-10px`,
-            animationDuration: `${5 + Math.random() * 7}s`,
-            animationDelay: `${Math.random() * 3}s`,
-            transform: `scale(${0.4 + Math.random() * 1.6})`,
-          }}
-        />
-      ))}
+      <Particles count={36} />
 
       {/* logo - warm halo, transparent, metallic shine */}
       <div className="relative animate-intro-zoom animate-logo-float">

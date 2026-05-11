@@ -1,5 +1,6 @@
 import hero from "@/assets/hero-studio.jpg";
 import alexierVideo from "@/assets/alexier.mp4";
+import { Particles } from "./Particles";
 
 export function Hero() {
   return (
@@ -24,18 +25,7 @@ export function Hero() {
       <span className="light-streak" style={{ top: "78%", animationDelay: "6s", animationDuration: "10s" }} />
 
       {/* floating particles */}
-      {Array.from({ length: 18 }).map((_, i) => (
-        <span
-          key={i}
-          className="particle"
-          style={{
-            left: `${Math.random() * 100}%`,
-            bottom: 0,
-            animationDuration: `${10 + Math.random() * 10}s`,
-            animationDelay: `${Math.random() * 5}s`,
-          }}
-        />
-      ))}
+      <Particles count={18} />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="inline-flex items-center gap-3 mb-8 px-5 py-2 rounded-full glass-light animate-fade-up shadow-luxe">
@@ -43,30 +33,31 @@ export function Hero() {
           <span className="text-xs uppercase tracking-[0.4em] text-gold-deep">A World-Class Production House</span>
         </div>
 
-        <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[0.95] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <span className="block text-coffee">Crafting Stories</span>
-          <span className="block text-gradient-gold">That Connect</span>
-          <span className="block text-coffee">& Engage</span>
+        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <span className="block text-coffee">India's Next Generation</span>
+          <span className="block text-gradient-gold">Microdrama & Localization</span>
+          <span className="block text-coffee">Studio</span>
         </h1>
 
-        <p className="mt-8 max-w-3xl mx-auto text-lg sm:text-xl text-coffee/80 font-light tracking-wide animate-fade-up" style={{ animationDelay: "0.4s" }}>
-          Premium Microdrama • Fiction • AI Content • Dubbing • Full Spectrum Production
+        <p className="mt-8 max-w-3xl mx-auto text-lg sm:text-2xl text-coffee/80 font-light tracking-wide animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          Cinema-Level Emotion. <span className="text-gold-deep font-medium">Digital-First Storytelling.</span>
         </p>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.6s" }}>
           <a
-            href="#services"
-            className="group relative inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-gold text-coffee font-semibold uppercase tracking-widest text-sm shadow-gold hover:shadow-glow transition-all duration-500 overflow-hidden"
+            href="#showreel"
+            className="group relative inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-gold text-coffee font-semibold uppercase tracking-widest text-sm shadow-gold hover:shadow-glow transition-all duration-500 overflow-hidden"
           >
-            <span className="relative z-10">Explore Services</span>
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-coffee/15 text-coffee">▶</span>
+            <span className="relative z-10">Experience The Showreel</span>
             <span className="absolute inset-0 animate-shimmer opacity-0 group-hover:opacity-100" />
           </a>
           <a
-            href="#showreel"
+            href="#contact"
             className="inline-flex items-center gap-3 px-10 py-4 rounded-full glass-light text-coffee font-semibold uppercase tracking-widest text-sm hover:bg-gold/15 transition shadow-luxe"
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-coffee">▶</span>
-            Watch Showreel
+            Start Your Project
+            <span className="text-gold-deep">→</span>
           </a>
         </div>
 

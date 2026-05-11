@@ -28,9 +28,17 @@ export function Founder() {
           </div>
 
           <div className="lg:col-span-3">
-            <div className="text-xs uppercase tracking-[0.4em] text-gold-deep mb-4">— The Story —</div>
-            <p className="font-display text-2xl md:text-3xl text-coffee leading-relaxed first-letter:font-bold first-letter:text-6xl first-letter:mr-2 first-letter:float-left first-letter:text-gradient-gold">
-              Ankit Jain, known creatively as <span className="text-gradient-gold font-semibold">Kabeer</span>, is the visionary founder and creative force behind Alexier Productions. His journey began in 2015 in the world of entertainment, evolving through years as an RJ and Senior Managing Head in radio, where he mastered the art of voice and audience connection. By 2019, he had stepped into premium dubbing for Netflix and Amazon Prime, bridging stories across languages and cultures. As CEO of Premix Production from 2020, he led ambitious work across television, films, and web shows, before crafting cinematic brand narratives for Indian and German enterprises. Today, through Alexier Productions, Kabeer channels a decade of storytelling instinct into a full-spectrum content house — building emotion, artistry, and cinematic excellence into every frame.
+            <div className="text-xs uppercase tracking-[0.4em] text-gold-deep mb-4">— Founder's Vision —</div>
+            <blockquote className="relative">
+              <div className="font-display text-7xl text-gradient-gold leading-none mb-2">"</div>
+              <p className="font-display text-3xl md:text-4xl text-coffee leading-snug -mt-6 italic">
+                At Alexier, we believe storytelling should feel <span className="text-gradient-gold not-italic font-semibold">immersive, emotional and globally adaptable.</span>
+              </p>
+            </blockquote>
+
+            <div className="mt-10 text-xs uppercase tracking-[0.4em] text-gold-deep mb-4">— The Story —</div>
+            <p className="text-lg md:text-xl text-coffee/80 leading-relaxed">
+              Ankit Jain, known creatively as <span className="text-gradient-gold font-semibold">Kabeer</span>, is the visionary founder and creative force behind Alexier Productions. His journey began in 2015 in entertainment, evolving through years as an RJ and Senior Managing Head in radio, where he mastered voice and audience connection. By 2019, he stepped into premium dubbing for Netflix and Amazon Prime, bridging stories across languages and cultures. As CEO of Premix Production from 2020, he led ambitious work across television, films and web shows, before crafting cinematic brand narratives for Indian and German enterprises. Today, through Alexier Productions, Kabeer channels a decade of storytelling instinct into a full-spectrum content house — building emotion, artistry and cinematic excellence into every frame.
             </p>
           </div>
         </div>
