@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 50, suffix: "+", label: "Hours Produced" },
+  { value: 100, suffix: "M+", label: "Audience Reach" },
+  { value: 250, suffix: "Hr+", label: "Production Hours" },
+  { value: 25, suffix: "+", label: "Verticals · US" },
+  { value: 7, suffix: "+", label: "Verticals · India" },
   { value: 8, suffix: "+", label: "Languages" },
-  { value: 100, suffix: "%", label: "Premium Localization" },
-  { value: 11, suffix: "", label: "Production Verticals" },
+  { value: 11, suffix: "", label: "Production Pipelines" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
@@ -51,7 +53,13 @@ export function Stats() {
     <section className="relative py-24 bg-gradient-cream text-coffee overflow-hidden">
       <div className="absolute inset-0 bg-cinematic-light opacity-50" />
       <div className="container mx-auto px-6 relative">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="text-center mb-14">
+          <div className="text-xs uppercase tracking-[0.5em] text-gold-deep mb-3">— Audience & Scale —</div>
+          <h2 className="font-display text-4xl md:text-6xl font-bold text-coffee">
+            Built At <span className="text-gradient-gold">Global Scale</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
           {stats.map((s) => (
             <div
               key={s.label}
