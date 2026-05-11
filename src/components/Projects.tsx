@@ -23,21 +23,36 @@ const projects = [
 
 function VideoShowcase({ src, poster, label, id }: { src: string; poster: string; label: string; id?: string }) {
   return (
-    <div id={id} className="relative rounded-3xl overflow-hidden shadow-luxe gold-border-glow group">
-      <video
-        src={src}
-        poster={poster}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        className="w-full aspect-[21/9] object-cover transition-transform duration-[2s] group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-coffee/85 via-coffee/20 to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-ivory">
-        <div className="text-xs uppercase tracking-[0.5em] text-gold-soft">— Featured Reel —</div>
-        <h3 className="font-display text-4xl md:text-6xl font-bold mt-2 text-shadow-cinema">{label}</h3>
+    <div id={id} className="relative rounded-[2rem] overflow-hidden shadow-cinematic gold-border-glow group">
+      {/* glowing aura */}
+      <div className="absolute -inset-3 bg-gradient-gold opacity-30 blur-3xl rounded-[2.5rem] animate-glow-pulse pointer-events-none" />
+      <div className="relative">
+        <video
+          src={src}
+          poster={poster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="w-full aspect-[16/9] object-cover transition-transform duration-[2s] group-hover:scale-[1.03]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-coffee/80 via-coffee/10 to-transparent pointer-events-none film-grain" />
+
+        {/* light streaks */}
+        <span className="light-streak" style={{ top: "30%" }} />
+        <span className="light-streak" style={{ top: "65%", animationDelay: "4s" }} />
+
+        {/* play badge */}
+        <div className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 rounded-full bg-coffee/40 backdrop-blur-xl border border-gold/40 text-ivory text-xs uppercase tracking-[0.35em]">
+          <span className="h-2 w-2 rounded-full bg-gold animate-glow-pulse" /> Now Playing
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-14 text-ivory">
+          <div className="text-xs uppercase tracking-[0.5em] text-gold-soft">— Experience The Storytelling —</div>
+          <h3 className="font-display text-4xl md:text-7xl font-bold mt-3 text-shadow-cinema leading-tight">{label}</h3>
+          <p className="mt-3 text-ivory/75 max-w-2xl text-sm md:text-base">Emotion engineered for engagement, retention and impact.</p>
+        </div>
       </div>
     </div>
   );
@@ -62,11 +77,12 @@ export function Projects() {
     <section id="projects" className="relative py-32 bg-gradient-cream overflow-hidden">
       <div className="absolute inset-0 bg-cinematic-light opacity-40" />
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="text-xs uppercase tracking-[0.5em] text-gold-deep mb-3">— Our Work —</div>
+        <div className="text-center mb-12">
+          <div className="text-xs uppercase tracking-[0.5em] text-gold-deep mb-3">— Showreel —</div>
           <h2 className="font-display text-5xl md:text-7xl font-bold text-coffee">
-            Featured <span className="text-gradient-gold">Projects</span>
+            Experience The <span className="text-gradient-gold">Storytelling</span>
           </h2>
+          <p className="mt-5 text-coffee/65 max-w-2xl mx-auto text-lg">Emotion engineered for engagement, retention and impact.</p>
         </div>
 
         <VideoShowcase id="showreel" src={filmVideo} poster={showreel1} label="Production House Showreel" />

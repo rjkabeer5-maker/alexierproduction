@@ -20,6 +20,10 @@ const locations = [
     city: "Delhi",
     addr: "332A Basement, Gali No 6, West Guru Angad Nagar, Laxmi Nagar, East Delhi — near Nirman Vihar Metro Station",
   },
+  {
+    city: "Toronto · Canada",
+    addr: "Yash Raj Films Canada INC. · 55 York Street, Suite 401, Toronto, ON M5J 1R7, Canada · +1 416-749-3586",
+  },
 ];
 
 export function Contact() {
@@ -63,13 +67,15 @@ export function Contact() {
             <div className="p-8 rounded-3xl glass-light gold-border-glow shadow-luxe">
               <div className="text-xs uppercase tracking-[0.4em] text-gold-deep mb-4">Reach Out</div>
               <div className="space-y-2 text-lg">
-                <a href="tel:+916260633198" className="block text-coffee hover:text-gradient-gold transition">+91 6260 633 198</a>
+                <a href="tel:+916260633198" className="block text-coffee hover:text-gradient-gold transition">India · +91 6260 633 198</a>
+                <a href="tel:+14167493586" className="block text-coffee hover:text-gradient-gold transition">Canada · +1 416-749-3586</a>
                 <a href="mailto:Alexierceo@gmail.com" className="block text-coffee hover:text-gradient-gold transition">Alexierceo@gmail.com</a>
                 <a href="mailto:Main@alexierproduction.com" className="block text-coffee hover:text-gradient-gold transition">Main@alexierproduction.com</a>
+                <a href="mailto:Usinfo@alexierproduction.in" className="block text-coffee hover:text-gradient-gold transition">Usinfo@alexierproduction.in</a>
               </div>
             </div>
 
-            <div className="grid gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               {locations.map((l) => (
                 <div key={l.city} className="p-6 rounded-2xl glass-light gold-border-glow shadow-luxe hover:shadow-glow transition">
                   <div className="font-display text-2xl text-gradient-gold">{l.city}</div>
