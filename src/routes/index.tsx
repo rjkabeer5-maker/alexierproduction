@@ -10,7 +10,7 @@ import { Stats } from "@/components/Stats";
 import { ViralProjects } from "@/components/ViralProjects";
 import { Workflow } from "@/components/Workflow";
 import { MicrodramaShowcase } from "@/components/MicrodramaShowcase";
-import { MicrodramaShowreel } from "@/components/MicrodramaShowreel";
+
 import { OriginalFiction } from "@/components/OriginalFiction";
 import { CastingStory } from "@/components/CastingStory";
 import { Studio } from "@/components/Studio";
@@ -54,7 +54,6 @@ function Index() {
       <Navbar />
       <Hero />
       <Projects />
-      <MicrodramaShowreel />
       <Stats />
       <WhyChoose />
       <Services />
