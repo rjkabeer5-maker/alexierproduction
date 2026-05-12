@@ -34,6 +34,12 @@ export function Hero() {
         </div>
 
 
+        <div className="mb-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+          <span className="font-display text-sm sm:text-base md:text-lg tracking-[0.45em] uppercase text-gradient-gold">
+            A World Class Production Company
+          </span>
+        </div>
+
         <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
           <span className="block text-coffee">India's Premium</span>
           <span className="block text-gradient-gold">OTT Partner</span>
