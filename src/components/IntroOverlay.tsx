@@ -36,9 +36,6 @@ export function IntroOverlay() {
         <div className="font-display text-5xl md:text-7xl font-bold text-gradient-gold text-shadow-soft tracking-wide">
           Alexier Productions
         </div>
-        <div className="mt-3 text-[10px] md:text-xs uppercase tracking-[0.6em] text-coffee/70">
-          Crafting Stories • Cinematic Excellence
-        </div>
       </div>
     </div>
   );
