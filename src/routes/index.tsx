@@ -54,6 +54,7 @@ function Index() {
       <Navbar />
       <Hero />
       <Projects />
+      <MicrodramaShowreel />
       <Stats />
       <WhyChoose />
       <Services />
