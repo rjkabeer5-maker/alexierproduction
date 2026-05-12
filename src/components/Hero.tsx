@@ -36,7 +36,7 @@ export function Hero() {
 
         <div className="mb-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
           <span className="font-display text-sm sm:text-base md:text-lg tracking-[0.45em] uppercase text-gradient-gold">
-            A World Class Production Company
+            Alexier Productions
           </span>
         </div>
 
