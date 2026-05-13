@@ -41,8 +41,8 @@ export function Hero() {
         </div>
 
         <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <span className="block text-coffee">India's Premium</span>
-          <span className="block text-gradient-gold">OTT Partner</span>
+          <span className="block text-coffee">A World Class</span>
+          <span className="block text-gradient-gold">Production Company</span>
         </h1>
 
         <p className="mt-8 max-w-3xl mx-auto text-lg sm:text-2xl text-coffee/80 font-light tracking-wide animate-fade-up" style={{ animationDelay: "0.4s" }}>
