@@ -28,12 +28,6 @@ export function Hero() {
       <Particles count={18} />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="inline-flex items-center gap-3 mb-8 px-5 py-2 rounded-full glass-light animate-fade-up shadow-luxe">
-          <span className="h-2 w-2 rounded-full bg-gold animate-glow-pulse" />
-          <span className="text-xs uppercase tracking-[0.4em] text-gold-deep">India's Premium OTT Partner</span>
-        </div>
-
-
         <div className="mb-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
           <span className="font-display text-sm sm:text-base md:text-lg tracking-[0.45em] uppercase text-gradient-gold">
             Alexier Productions
