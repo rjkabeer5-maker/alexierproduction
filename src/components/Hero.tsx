@@ -24,29 +24,43 @@ export function Hero() {
       <span className="light-streak" style={{ top: "55%", animationDelay: "3s", animationDuration: "12s" }} />
       <span className="light-streak" style={{ top: "78%", animationDelay: "6s", animationDuration: "10s" }} />
 
-      {/* floating particles */}
-      <Particles count={18} />
+      {/* floating golden particles */}
+      <Particles count={28} />
 
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="mb-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+      {/* Pop-up animated badge at top */}
+      <div className="absolute top-24 left-1/2 -translate-x-1/2 z-20 animate-scale-in" style={{ animationDelay: "0.1s", animationFillMode: "both" }}>
+        <div className="px-6 py-2.5 rounded-full glass-light gold-border-glow shadow-luxe">
+          <span className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gradient-gold font-semibold whitespace-nowrap">
+            A World-Class Productions Company
+          </span>
+        </div>
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6 text-center pt-16">
+        <div className="mb-6 animate-fade-up" style={{ animationDelay: "0.25s" }}>
           <span className="font-display text-sm sm:text-base md:text-lg tracking-[0.45em] uppercase text-gradient-gold">
             Alexier Productions
           </span>
         </div>
 
-        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <span className="block text-coffee">India's Premium</span>
-          <span className="block text-gradient-gold">OTT Partner</span>
+        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.98] text-shadow-soft animate-fade-up" style={{ animationDelay: "0.35s" }}>
+          <span className="block text-coffee">Welcome to a</span>
+          <span className="block text-gradient-gold">World-Class Productions Company</span>
         </h1>
 
-        <p className="mt-8 max-w-3xl mx-auto text-lg sm:text-2xl text-coffee/80 font-light tracking-wide animate-fade-up" style={{ animationDelay: "0.4s" }}>
+        <p className="mt-8 max-w-3xl mx-auto text-lg sm:text-2xl text-coffee/80 font-light tracking-wide animate-fade-up" style={{ animationDelay: "0.5s" }}>
           Cinema-Level Emotion. <span className="text-gold-deep font-medium">Digital-First Storytelling.</span>
         </p>
-        <p className="mt-3 max-w-2xl mx-auto text-base sm:text-lg text-coffee/65 italic animate-fade-up" style={{ animationDelay: "0.5s" }}>
+        <p className="mt-3 max-w-2xl mx-auto text-base sm:text-lg text-coffee/65 italic animate-fade-up" style={{ animationDelay: "0.6s" }}>
           From Script To Screen — Fully Managed.
         </p>
 
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+        {/* Audience growth highlight */}
+        <p className="mt-4 text-xs sm:text-sm uppercase tracking-[0.4em] text-gold-deep/80 animate-fade-up" style={{ animationDelay: "0.7s" }}>
+          ✦ Reaching Audiences of 25M+ ✦
+        </p>
+
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.8s" }}>
           <a
             href="#showreel"
             className="group relative inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-gold text-coffee font-semibold uppercase tracking-widest text-sm shadow-gold hover:shadow-glow transition-all duration-500 overflow-hidden"
@@ -65,7 +79,7 @@ export function Hero() {
         </div>
 
         {/* subtitle bar */}
-        <div className="mt-20 mx-auto inline-block px-8 py-3 rounded-full glass-light text-coffee text-sm tracking-wide animate-fade-up shadow-luxe" style={{ animationDelay: "0.8s" }}>
+        <div className="mt-20 mx-auto inline-block px-8 py-3 rounded-full glass-light text-coffee text-sm tracking-wide animate-fade-up shadow-luxe" style={{ animationDelay: "1s" }}>
           “Every frame is a feeling. Every story is cinema.”
         </div>
       </div>
