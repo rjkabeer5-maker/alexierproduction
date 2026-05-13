@@ -69,7 +69,7 @@ export function Contact() {
               <div className="space-y-2 text-lg">
                 <a href="tel:+916260633198" className="block text-coffee hover:text-gradient-gold transition">India · +91 6260 633 198</a>
                 <a href="tel:+14167493586" className="block text-coffee hover:text-gradient-gold transition">Canada · +1 416-749-3586</a>
-                <a href="mailto:kabeer@alexierproductions.com" className="block text-coffee hover:text-gradient-gold transition">kabeer@alexierproductions.com</a>
+                <a href="mailto:Alexierceo@gmail.com" className="block text-coffee hover:text-gradient-gold transition">Alexierceo@gmail.com</a>
                 <a href="mailto:Main@alexierproduction.com" className="block text-coffee hover:text-gradient-gold transition">Main@alexierproduction.com</a>
                 <a href="mailto:Usinfo@alexierproduction.in" className="block text-coffee hover:text-gradient-gold transition">Usinfo@alexierproduction.in</a>
               </div>
