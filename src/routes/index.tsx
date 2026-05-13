@@ -52,6 +52,7 @@ function Index() {
   return (
     <main className="relative bg-ivory text-coffee overflow-x-hidden">
       <IntroOverlay />
+      <IntroMusic />
       <Navbar />
       <Hero />
       <Projects />
