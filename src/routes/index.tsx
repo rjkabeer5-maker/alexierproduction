@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { IntroOverlay } from "@/components/IntroOverlay";
+import { IntroMusic } from "@/components/IntroMusic";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { WhyChoose } from "@/components/WhyChoose";
