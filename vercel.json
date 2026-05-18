@@ -1,7 +1,6 @@
-{
-  "functions": {
-    "api/**/*": {
-      "runtime": "nodejs20.x"
-    }
-  }
+{{
+  "version": 2,
+  "framework": "vite",
+  "buildCommand": "vinxi build",
+  "outputDirectory": ".output/public"
 }
